@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversão de Unidades de Tempo</title>
+
+        <script type="text/javascript">
+        
+        var segundos;
+
+        alert("Informe a quantidade de segundos: ");
+        segundos = Number(prompt());
+
+        function horasMinutosSegundos(segundos){
+
+            var restoHora, restoMinutos, minutos, segundo, horaInteira, minutosInteiros, relogio;
+		
+		    restoHora = segundos % 3600;
+		    minutos = restoHora;
+		    restoMinutos = minutos % 60;
+	    	segundo = restoMinutos;
+		
+		    horaInteira = (segundos - restoHora)/3600;
+		    minutosInteiros = (minutos - restoMinutos)/60;
+		
+		    relogio = horaInteira + ":" + minutosInteiros + ":" + segundo;
+
+            return relogio;
+
+        }
+
+        alert("Descrição do Tempo: " + horasMinutosSegundos(segundos));
+                
+        </script>
+        
+    </head>
+    
+    <body>
+    
+    </body>
+
+</html>

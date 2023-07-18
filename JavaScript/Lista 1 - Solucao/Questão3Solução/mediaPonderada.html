@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcular Média Ponderada</title>
+
+        <script type="text/javascript">
+
+            var nota1, nota2, nota3, mediaPonderada;
+
+            alert("Por favor, informe a primeira nota do aluno:");
+            nota1 = Number(prompt());
+
+            while(nota1<0){
+
+                alert("Informe uma nota válida!");
+                nota1 = Number(prompt());
+
+            }
+
+            alert("Por favor, informe a segunda nota do aluno:");
+            nota2 = Number(prompt());
+
+            while(nota2<0){
+
+                alert("Informe uma nota válida!");
+                nota2 = Number(prompt());
+
+            }
+
+            alert("Por favor, informe a terceira nota do aluno:");
+            nota3 = Number(prompt());
+
+            while(nota3<0){
+
+                alert("Informe uma nota válida!");
+                nota3 = Number(prompt());
+
+            }
+
+            mediaPonderada = ((nota1*2)+(nota2*3)+(nota3*5))/10;
+
+            alert("A média ponderada das notas do aluno é: " + mediaPonderada);
+
+
+        </script>
+
+    </head>
+
+    <body>
+    
+    </body>
+
+</html>

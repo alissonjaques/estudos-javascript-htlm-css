@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informações Sobre as Entradas</title>
+
+        <script type="text/javascript">
+
+           var numero, quantidadePares = 0, quantidadeImpares = 0, quantidadePositivos = 0, quantidadeNegativos = 0, i;
+           var saida;
+
+           for(i=0; i<=4; i++){
+
+                alert("Informe um número: ");
+                numero = Number(prompt());
+
+                if((numero%2)==0){
+
+                    quantidadePares++;
+
+                }
+                else{
+
+                    quantidadeImpares++;
+
+                }
+
+                if(numero>0){
+
+                    quantidadePositivos++;
+
+                }
+                else{
+                    
+                    if(numero<0){
+
+                        quantidadeNegativos++;
+
+                    }
+                }
+
+           }
+        
+           saida = quantidadePares + "valor(es) par(es)"+"\n" + quantidadeImpares + "valor(es) impar(es)" +"\n" + quantidadePositivos +"valor(es) positivo(s)"+"\n"+quantidadeNegativos+"valor(es) negativo(s)" + "\n";
+
+           alert(saida);
+
+        </script>
+        
+    </head>
+    
+    <body>
+    
+    </body>
+
+</html>

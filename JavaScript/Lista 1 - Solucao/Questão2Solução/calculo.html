@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cálculo de D</title>
+        
+        <script type="text/javascript">
+            /**
+                @author Alisson Jaques
+            
+            */
+            // declaração de variáveis auxiliares
+            let A, B, C, contadorA=0, contadorB=0;
+            let R, S, D;
+            
+            // solicitamos ao usuário que entre com três números inteiros positivos
+            alert("Por favor, informe três números inteiros positivos:");
+            
+            // armazenamos o primeiro número inteiro informado pelo usuário
+            A = Number(prompt());
+            
+            while(A<=0){ // enquanto o usuário não informar um valor válido (A>0), faça:
+
+                contadorA++; // contadorA recebe seu conteúdo acrescido de uma unidade
+                alert("Informe um valor válido para A (A>0):"); // solicitamos um valor válido
+                A = Number(prompt()); // armazenamos o novo valor armazenado em A
+
+            } // fim while
+
+            if(contadorA!=0){ // se o primeiro valor de A informado não for positivo
+
+                // solicitamos ao usuário que nos informe um valor para a variável B
+                alert("Agora informe um valor inteiro positivo para B:");
+
+            } // fim-se
+
+            // armazenamos o segundo valor válido que o usuário informar em B
+            B = Number(prompt());
+            
+            while(B<=0){ // enquanto o usuário não informar um valor válido (B>0), faça:
+
+                contadorB++; //contadorB recebe seu conteúdo acrescido de uma unidade
+                alert("Informe um valor válido para B (B>0):"); // solicitamos um valor válido
+                B = Number(prompt()); // armazenamos o novo valor informado em B
+
+            } // fim do while
+
+            if(contadorB!=0){ // se o primeiro valor de B informado não for positivo
+
+                // solicitamos ao usuário que nos informe um valor para a variável C
+                alert("Agora informe um valor inteiro positivo para C:");
+
+            }
+
+            // armazenamos o segundo valor válido que o usuário informar em C
+            C = Number(prompt());
+            
+            while(C<=0){ // enquanto o valor de C não for positivo (C>0), faça:
+
+                alert("Informe um valor válido para C (C>0):"); // solicitamos um valor válido
+                C = Number(prompt()); // armazenamos o novo valor informado em C
+
+            } // fim do while
+                        
+            R = Math.pow((A+B),2); // R = (A+B)²
+            S = Math.pow((B+C),2); // S = (B+C)²
+            D = (R+S)/2;         
+            
+            // informamos o conteúdo de D
+            alert("O valor de D é: " + D);
+
+        </script>
+
+    </head>
+
+    <body>
+    
+
+    </body>
+
+</html>

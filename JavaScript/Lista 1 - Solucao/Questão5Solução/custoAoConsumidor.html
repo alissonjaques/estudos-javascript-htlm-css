@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cálculo do Custo Final</title>
+
+        <script type="text/javascript">
+
+            var custoDeFabrica, custoAoConsumidor;
+
+            alert("Informe o custo de fábrica do carro: ");
+            custoDeFabrica = Number(prompt());
+
+            percentagemDistribuidor = 0.28*custoDeFabrica;
+            percentagemImpostos = 0.45*custoDeFabrica;
+
+            custoAoConsumidor = custoDeFabrica + percentagemDistribuidor + percentagemImpostos;
+
+            alert("O valor de custo ao consumidor será: "+"R$"+custoAoConsumidor);
+                
+        </script>
+        
+    </head>
+    
+    <body>
+    
+    </body>
+
+</html>

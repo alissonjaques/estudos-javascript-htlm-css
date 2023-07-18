@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Distância Entre dois Pontos</title>
+
+        <script language="javascript">
+
+            var pontoAx, pontoAy, pontoBx, pontoBy, distancia, diferencaX, diferencaY;
+
+            pontoAx = prompt("Digite o valor da coordenada x do primeiro ponto:");
+            pontoAy = prompt("Digite o valor da coordenada y do primeiro ponto:");
+            pontoBx = prompt("Digite o valor da coordenada x do segundo ponto:");
+            pontoBy = prompt("Digite o valor da coordenada y do segundo ponto:");
+
+            diferencaX = pontoAx - pontoBx;
+            diferencaY = pontoAy - pontoBy;
+            distancia = Math.sqrt(diferencaX+diferencaY);
+
+            alert("A distância entre os pontos informados é: " + distancia);
+
+        </script>
+
+    </head>
+
+    <body>
+    
+    </body>
+
+</html>
