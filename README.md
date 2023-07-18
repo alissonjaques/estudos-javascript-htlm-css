@@ -1,2 +1,2 @@
-# estudos-javascript-htlm-css
+# Javascript - HTML - CSS
 Projetos de estudos sobre programação web
